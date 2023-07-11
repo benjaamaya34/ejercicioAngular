@@ -1,0 +1,17 @@
+<div class="contenedor">
+  <div *ngIf="verLista">
+    <ng-container *ngFor="let producto of item">
+      <ul>
+        <li >{{ producto.nombre }} - {{ producto.costo }}</li>
+      </ul>
+    </ng-container>
+  </div>
+  <button mat-button (click)="mostrarLista()">Mostrar/Ocultar Productos</button>
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>
+
